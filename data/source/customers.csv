@@ -1,0 +1,11 @@
+customer_id,first_name,last_name,document_number,birth_date,email,province,registration_date
+1001,Juan,Perez,25456789,1980-05-12,juan.perez@email.com,Buenos Aires,2025-01-15
+1002,Laura,Gomez,30123456,1985-11-23,laura.gomez@email.com,Cordoba,2025-02-10
+1003,Martin,Rodriguez,28765432,1978-03-04,martin.rodriguez@email.com,Santa Fe,2025-02-18
+1004,Sofia,Fernandez,35678901,1992-07-19,sofia.fernandez@email.com,Buenos Aires,2025-03-05
+1005,Diego,Lopez,32456789,1988-09-30,,Mendoza,2025-03-12
+1006,Ana,Martinez,27890123,1975-12-08,ana.martinez@email.com,buenos aires,2025-04-01
+1007,Pablo,Sanchez,33456789,1990-01-17,pablo.sanchez@email.com,CORDOBA,2025-04-15
+1007,Pablo,Sanchez,33456789,1990-01-17,pablo.sanchez@email.com,CORDOBA,2025-04-15
+1008,Carolina,Ruiz,,1983-06-25,carolina.ruiz@email.com,Santa Fe,2025-05-03
+1009,Federico,Torres,36987654,1995-10-11,federico.torres@email.com,Buenos Aires,2025-05-20

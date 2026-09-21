@@ -1,0 +1,31 @@
+{
+  "sources": [
+    {
+      "source_name": "customers",
+      "file_name": "customers.csv",
+      "file_format": "csv",
+      "target_name": "customers",
+      "delimiter": ",",
+      "header": true,
+      "active": true
+    },
+    {
+      "source_name": "policies",
+      "file_name": "policies.csv",
+      "file_format": "csv",
+      "target_name": "policies",
+      "delimiter": ",",
+      "header": true,
+      "active": true
+    },
+    {
+      "source_name": "claims",
+      "file_name": "claims.csv",
+      "file_format": "csv",
+      "target_name": "claims",
+      "delimiter": ",",
+      "header": true,
+      "active": true
+    }
+  ]
+}
