@@ -1,1 +1,35 @@
-.ipynb_checkpoints/ 
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Generated data (keep synthetic source CSV files under data/source/)
+data/bronze/
+data/silver/
+data/gold/
+data/output/
+
+# Local logs and temporary files
+*.log
+*.tmp
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example

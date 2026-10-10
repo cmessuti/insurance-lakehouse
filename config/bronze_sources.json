@@ -5,6 +5,8 @@
       "file_name": "customers.csv",
       "file_format": "csv",
       "target_name": "customers",
+      "target_format": "parquet",
+      "primary_keys": ["customer_id"],
       "delimiter": ",",
       "header": true,
       "active": true
@@ -14,6 +16,8 @@
       "file_name": "policies.csv",
       "file_format": "csv",
       "target_name": "policies",
+      "target_format": "parquet",
+      "primary_keys": ["policy_id"],
       "delimiter": ",",
       "header": true,
       "active": true
@@ -23,6 +27,8 @@
       "file_name": "claims.csv",
       "file_format": "csv",
       "target_name": "claims",
+      "target_format": "parquet",
+      "primary_keys": ["claim_id"],
       "delimiter": ",",
       "header": true,
       "active": true

@@ -1,0 +1,75 @@
+{
+  "customers": {
+    "primary_keys": ["customer_id"],
+    "casts": {
+      "customer_id": "long",
+      "document_number": "long"
+    },
+    "dates": {
+      "birth_date": "yyyy-MM-dd",
+      "registration_date": "yyyy-MM-dd"
+    },
+    "trim": [
+      "first_name",
+      "last_name",
+      "email",
+      "province"
+    ],
+    "lower": [
+      "email"
+    ],
+    "upper": [],
+    "initcap": [
+      "province"
+    ]
+  },
+
+  "policies": {
+    "primary_keys": ["policy_id"],
+    "casts": {
+      "customer_id": "long",
+      "premium": "decimal(18,2)"
+    },
+    "dates": {
+      "start_date": "yyyy-MM-dd",
+      "end_date": "yyyy-MM-dd"
+    },
+    "trim": [
+      "policy_id",
+      "product",
+      "status"
+    ],
+    "lower": [],
+    "upper": [
+      "status"
+    ],
+    "initcap": [
+      "product"
+    ]
+  },
+
+  "claims": {
+    "primary_keys": ["claim_id"],
+    "casts": {
+      "estimated_amount": "decimal(18,2)",
+      "paid_amount": "decimal(18,2)"
+    },
+    "dates": {
+      "claim_date": "yyyy-MM-dd",
+      "report_date": "yyyy-MM-dd"
+    },
+    "trim": [
+      "claim_id",
+      "policy_id",
+      "claim_type",
+      "status"
+    ],
+    "lower": [],
+    "upper": [
+      "status"
+    ],
+    "initcap": [
+      "claim_type"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "customers": {
+    "not_null": [
+      "customer_id",
+      "document_number"
+    ],
+    "positive": [],
+    "non_negative": [],
+    "allowed_values": {},
+    "column_comparisons": []
+  },
+
+  "policies": {
+    "not_null": [
+      "policy_id",
+      "customer_id",
+      "premium"
+    ],
+    "positive": [
+      "premium"
+    ],
+    "non_negative": [],
+    "allowed_values": {
+      "status": [
+        "ACTIVE",
+        "EXPIRED"
+      ]
+    },
+    "column_comparisons": [
+      {
+        "left": "end_date",
+        "operator": ">=",
+        "right": "start_date"
+      }
+    ]
+  },
+
+  "claims": {
+    "not_null": [
+      "claim_id",
+      "policy_id",
+      "claim_date",
+      "report_date",
+      "estimated_amount"
+    ],
+    "positive": [],
+    "non_negative": [
+      "estimated_amount",
+      "paid_amount"
+    ],
+    "allowed_values": {
+      "status": [
+        "OPEN",
+        "CLOSED"
+      ]
+    },
+    "column_comparisons": [
+      {
+        "left": "report_date",
+        "operator": ">=",
+        "right": "claim_date"
+      }
+    ]
+  },
+
+  "relationships": [
+    {
+      "child_dataset": "policies",
+      "child_column": "customer_id",
+      "parent_dataset": "customers",
+      "parent_column": "customer_id"
+    },
+    {
+      "child_dataset": "claims",
+      "child_column": "policy_id",
+      "parent_dataset": "policies",
+      "parent_column": "policy_id"
+    }
+  ]
+}
